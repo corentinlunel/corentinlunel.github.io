@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Homepage, Corentin Lunel</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Simple"> 
 	</head>
 	
-	<body>
-		<div>
-			<!-- <img src="profil.jpg" alt="Corentin Lunel" width="260" height ="260" align =right hspace=30/> -->
+	<body id="theme">
+		<div id = "general">
+			<img id="profil" src="profil.png" alt="Corentin Lunel" height ="230" align =right hspace=30/>
 			
 			<h1>Corentin Lunel</h1>
 			
@@ -30,7 +31,7 @@
 				<li><strong>Hopf Arborescent Links, Minor Theory, and Decidability of the Genus Defect</strong>, preprint <a href="https://arxiv.org/abs/2312.09094">arXiv.</a>
 				<br> 
 				with Pierre Dohornoy and Arnaud de Mesmay, 2023.<br>
-				Accepted in <a href="https://socg24.athenarc.gr/socg.html">SOCG 2024</a>
+				To appear in <a href="https://socg24.athenarc.gr/socg.html">SOCG 2024</a>
 				</li>
 				
 				<li><strong>A structural approach to tree decompositions of knots and spatial graphs</strong>, <a href="https://arxiv.org/abs/2303.07982">arXiv.</a>
@@ -45,6 +46,22 @@
 				<a href="https://www.quadrature-mag.fr/">Quadrature</a> <strong>112</strong> (2019) p23-31.
 				</li>
 			</ul>
-		</div>
+			
+			<h1>Some pictures</h1>		
+			<div class="slider-container">
+				<div class="nav">
+					<label for="slide-1"></label>
+					<label for="slide-2"></label>
+					<label for="slide-3"></label>
+				</div>
+					<input class="slide-input" id="slide-1" type="radio" name="slides" checked>
+					<img class="slide-img" src="./Images/pic_1.PNG">
+					<input class="slide-input" id="slide-2" type="radio" name="slides">
+					<img class="slide-img" src="./Images/pic_2.PNG">
+					<input class="slide-input" id="slide-3" type="radio" name="slides">
+					<img class="slide-img" src="./Images/pic_3.PNG">
+				</div>
+			</div>
 	</body>
 </html>
+

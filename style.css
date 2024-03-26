@@ -1,0 +1,108 @@
+#theme { 
+ background-color: grey;
+ color: black;
+ font-family:  Verdana;
+ font-size: 12px;
+ margin-top: 0;
+ margin-left: 0;
+}
+
+/* Contenant */
+
+#general {
+ background: white;
+ margin: 20px auto;
+ padding: 50;
+ position: relative;
+ width: 1000px;
+}
+
+#profil{
+margin: 0 30px; 
+float:right;
+}
+
+/* Liens */
+
+a { text-decoration: none; }
+
+a:link { color: blue; }   /* non visité */
+
+a:visited { color: purple; } /* visité */
+
+a:hover { text-decoration: underline; } /* lien sous le curseur de la souris */
+
+/* Titres*/
+
+h1 { 
+  color: black;
+  font: normal 200% Arial;
+  padding-left: 10px;
+} 
+
+/* Texte */
+
+p { 
+ margin-right: 0;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+/* Slider */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+}
+
+.nav {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.nav label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+
+.nav label:hover,.nav label:focus {
+    background: #8d76f9;
+}
+
+.slide-input{
+    opacity: 50;
+}
+
+.slide-img {
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+}
