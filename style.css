@@ -48,6 +48,12 @@ p {
  padding-right: 10px;
 }
 
+/* Liste */
+
+li{
+ margin: 10px 0;
+}
+
 /* Slider */
 
 html, body {
